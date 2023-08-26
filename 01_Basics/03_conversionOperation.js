@@ -30,3 +30,40 @@ let myNumber = 9
 let stringNumber = String(myNumber) 
 console.log(stringNumber);
 console.log(typeof stringNumber); // converted into String
+
+// =============> Operations <=============
+
+let value = 5
+let negValue = -value
+console.log(negValue);
+
+// Basic Arithmetic Operators
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3); // power
+// console.log(2/8);
+// console.log(2%3); // remainder
+
+let str1 = "Raj"
+let str2 = " Vishwa"
+let str3 = str1 + str2
+console.log(str3); // Raj Vishwa
+
+console.log("1" + 5); // 15
+console.log(1 + "5"); // 15
+console.log("1" + 5 + 5); // 155
+console.log(1 + 5 + "5"); // 65
+
+// correct way
+console.log((1 + 5) * 2 / 3); // 4
+
+// console.log(+true); // 1
+// console.log(true+); // error
+// console.log(+""); // 0
+
+let gameTimer = 60
+gameTimer++; // 61 postfix
+++gameTimer; // 61 prefix
+console.log(gameTimer);
