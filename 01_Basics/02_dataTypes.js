@@ -33,7 +33,31 @@ console.log(typeof undefined); // undefined
 // null ==> standalone value [empty value]
 // symbol ==> unique [usefull in React]
 
-// [Non-Primitive]
+const id = Symbol('123')
+const anotherId = Symbol('123')
+console.log(id === anotherId);  // false
 
-// object
+// const bigNumber = 45665478997456654n // bigint (just add 'n' at the end)
 
+// [Non-Primitive] (Reference Type)
+
+// objects
+// Array
+// Functions
+
+const heros = ["shaktiman", "naagraj", "rajnikant"]
+
+let myObj = {
+    name:"Raj",
+    age:30
+}
+
+const myFunction= function(){
+    console.log("Hello SuperHeros");
+}
+
+// DataTypes Output
+console.log(typeof myFunction); // function
+console.log(typeof myObj); // object
+console.log(typeof heros); // object
+console.log(typeof anotherId); // symbol
